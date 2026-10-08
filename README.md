@@ -3,6 +3,7 @@
 **Materia:** Programación Web  
 **Alumnos:** 
 Jiménez Juárez Marco Antonio
+
 Cruz Gutiérrez Jonathan Rene 
 
 ## Descripción Breve
@@ -41,8 +42,9 @@ Se estructuró una tarjeta (Card) centrada verticalmente con Bootstrap. Se progr
 
 ### 2. Desarrollo del Sidebar (Menú Lateral)
 Se diseñó un contenedor lateral utilizando Flexbox. Para la interactividad del submenú "Usuarios -> Captura", se utilizaron las clases `collapse` nativas de Bootstrap. En `app.js`, se creó la función `toggleSidebar()` que aplica un margen negativo para ocultar el menú de forma animada.
+<img src="imgred/RegistroAlumnos.jpeg" alt="resgistro">
 
-
+<img src="imgred/AlumnosRegistro-Completo.jpeg" alt="completo">
 
 ### 3. Integración del Navbar y Usuario
 Se construyó una barra superior de navegación. Del lado izquierdo se colocó el botón hamburguesa para el menú lateral, y del lado derecho un componente de tipo "Dropdown". Mediante DOM y `localStorage`, este dropdown refleja el usuario dinámicamente y contiene la función para eliminar la memoria de sesión.
