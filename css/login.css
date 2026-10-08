@@ -1,0 +1,32 @@
+/* Fondo con degradado moderno */
+body {
+    background: linear-gradient(135deg, #2c3e50, #3498db) !important;
+}
+
+/* Estilo suave para la tarjeta de login */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Ajustes del botón principal */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Ajuste del texto de error */
+#mensajeError {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
