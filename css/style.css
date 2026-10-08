@@ -1,0 +1,35 @@
+body { 
+    overflow-x: hidden; 
+}
+
+/* Contenedor principal que agrupa el menú y el contenido */
+#wrapper { 
+    display: flex; 
+    width: 100vw; 
+    height: 100vh; 
+}
+
+/* Diseño del menú lateral oscuro */
+#sidebar { 
+    width: 250px; 
+    background: #2c3e50; 
+    transition: all 0.3s ease; 
+}
+
+/* Clase dinámica que el JS agrega/quita para esconder el menú */
+#sidebar.oculto { 
+    margin-left: -250px; 
+}
+
+/* Área de contenido (se expande para llenar el espacio restante) */
+#page-content { 
+    flex: 1; 
+    overflow-y: auto; 
+    background-color: #f8f9fa; 
+}
+
+/* Efecto hover para los enlaces del menú lateral */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
