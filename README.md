@@ -48,14 +48,15 @@ Se diseñó un contenedor lateral utilizando Flexbox. Para la interactividad del
 
 ### 3. Integración del Navbar y Usuario
 Se construyó una barra superior de navegación. Del lado izquierdo se colocó el botón hamburguesa para el menú lateral, y del lado derecho un componente de tipo "Dropdown". Mediante DOM y `localStorage`, este dropdown refleja el usuario dinámicamente y contiene la función para eliminar la memoria de sesión.
+
 <img src="imgred/menu1.jpeg" alt="oculto">
 
 <img src="imgred/menu2.jpeg" alt="mostrando">
 
 ### 4. Validaciones: Número de Control
 En la sección de alumnos, se agregó un input numérico. Al procesar el formulario, `app.js` manda llamar a `validarLongitud(control, 6)` desde nuestra librería. Si el usuario ingresa 5 o 7 dígitos, el sistema interrumpe el flujo con una alerta antes de proceder a evaluar la edad.
-> **Captura - Alerta de validación de 6 dígitos:**
-> ![Validacion Digitos](URL_DE_TU_IMAGEN_DIGITOS_AQUI)
+<img src="imgred/numeroDecontrol.jpeg" alt="numcontrol">
+
 
 ### 5. Lógica de Fecha y Modal de Edad
 Se implementó un campo de tipo `date`. El sistema extrae esta fecha y utiliza la función `calcularEdad()` para obtener el número exacto, y `esMayorDeEdad()` para determinar el estatus legal. Finalmente, se instancia el componente Modal de Bootstrap vía JavaScript (`new bootstrap.Modal(...)`), inyectando un mensaje personalizado y alterando las clases de color (`text-success` o `text-danger`) dependiendo del resultado.
