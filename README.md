@@ -37,18 +37,18 @@ Toda la lógica matemática y de expresiones regulares (Regex) está encapsulada
 
 ### 1. Construcción del Login
 Se estructuró una tarjeta (Card) centrada verticalmente con Bootstrap. Se programó `login.js` para capturar los valores de los inputs y pasarlos por las validaciones. Se integró una alerta visual que cambia de la clase `d-none` (oculta) a visible si el usuario falla los requisitos de seguridad.
-> **Captura - Pantalla de Login:**
-> ![Login Screen](URL_DE_TU_IMAGEN_LOGIN_AQUI)
+<img src="imgred/logcap.jpeg" alt="login">
 
 ### 2. Desarrollo del Sidebar (Menú Lateral)
 Se diseñó un contenedor lateral utilizando Flexbox. Para la interactividad del submenú "Usuarios -> Captura", se utilizaron las clases `collapse` nativas de Bootstrap. En `app.js`, se creó la función `toggleSidebar()` que aplica un margen negativo para ocultar el menú de forma animada.
-> **Captura - Sidebar abierto y cerrado:**
-> ![Sidebar](URL_DE_TU_IMAGEN_SIDEBAR_AQUI)
+
+
 
 ### 3. Integración del Navbar y Usuario
 Se construyó una barra superior de navegación. Del lado izquierdo se colocó el botón hamburguesa para el menú lateral, y del lado derecho un componente de tipo "Dropdown". Mediante DOM y `localStorage`, este dropdown refleja el usuario dinámicamente y contiene la función para eliminar la memoria de sesión.
-> **Captura - Navbar con usuario logueado:**
-> ![Navbar Usuario](URL_DE_TU_IMAGEN_NAVBAR_AQUI)
+<img src="imgred/menu1.jpeg" alt="oculto">
+
+<img src="imgred/menu2.jpeg" alt="mostrando">
 
 ### 4. Validaciones: Número de Control
 En la sección de alumnos, se agregó un input numérico. Al procesar el formulario, `app.js` manda llamar a `validarLongitud(control, 6)` desde nuestra librería. Si el usuario ingresa 5 o 7 dígitos, el sistema interrumpe el flujo con una alerta antes de proceder a evaluar la edad.
@@ -57,14 +57,15 @@ En la sección de alumnos, se agregó un input numérico. Al procesar el formula
 
 ### 5. Lógica de Fecha y Modal de Edad
 Se implementó un campo de tipo `date`. El sistema extrae esta fecha y utiliza la función `calcularEdad()` para obtener el número exacto, y `esMayorDeEdad()` para determinar el estatus legal. Finalmente, se instancia el componente Modal de Bootstrap vía JavaScript (`new bootstrap.Modal(...)`), inyectando un mensaje personalizado y alterando las clases de color (`text-success` o `text-danger`) dependiendo del resultado.
-> **Captura - Modal indicando mayoría/minoría de edad:**
-> ![Modal Edad](URL_DE_TU_IMAGEN_MODAL_AQUI)
 
 ---
 
 ## 📸 Flujo Completo Funcionando
 
 *A continuación se muestra el ciclo completo: desde el intento de acceso, la navegación interna, y la ejecución de validaciones.*
+<img src="imgred/flujo1.jpeg" alt="login">
+<img src="imgred/flujo2.jpeg" alt="Captura de usuario">
+<img src="imgred/flujo3.jpeg" alt="registro alumno">
 
-> ![Flujo Completo 1](URL_DE_TU_IMAGEN_FLUJO1_AQUI)
-> ![Flujo Completo 2](URL_DE_TU_IMAGEN_FLUJO2_AQUI)
+
+
